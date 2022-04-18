@@ -7,19 +7,15 @@ import HomeScreen from './containers/HomeScreen';
 import ConverterScreen from './containers/ConverterScreen';
 import ShortenNameScreen from './containers/ShortenNameScreen';
 import CryptocurrencyScreen from './containers/CryptocurrencyScreen';
-
-
-
 const Drawer = createDrawerNavigator();
 
 function App() {
   
-
   return (
     <NavigationContainer>{
       (
-        <Drawer.Navigator>
-          <Drawer.Screen name="Home" component={HomeScreen} />
+        <Drawer.Navigator >
+          <Drawer.Screen name="Home" component={HomeScreen}  />
           <Drawer.Screen name="Converter" component={ConverterScreen} />
           <Drawer.Screen name="Shorten Name" component={ShortenNameScreen} />
           <Drawer.Screen name="Cryptocurrency" component={CryptocurrencyScreen} />
